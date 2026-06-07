@@ -173,11 +173,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="reveal mb-16">
             <h2 className="font-goo text-4xl md:text-5xl text-[#1e293b] mb-6 leading-tight">
-              The mess arrives.<br />
-              <span className="text-[#3b82f6]">Gentleness wins.</span>
+              Tiny messes, big cuddles.<br />
+              <span className="text-[#3b82f6]">Gentle as a lullaby.</span>
             </h2>
             <p className="text-[#64748b]/70 text-base max-w-md mx-auto leading-relaxed font-light">
-              Puree on a onesie. Nappy bin odours. Midnight accidents. We don't fight the mess — we dissolve it with molecular precision.
+              Spilled milk, nappy surprises, and that mysterious spot on the onesie. No harsh chemicals, no scary smells — just soft bubbles, quiet clean-ups, and happy little sighs.
             </p>
           </div>
 
@@ -188,9 +188,9 @@ export default function Home() {
               { icon: Cloud, value: '100%', label: 'Gentle Promise', color: '#3b82f6' },
               { icon: Building2, value: '12', label: 'House of GHOUL', color: '#3b82f6' },
             ].map((stat, i) => (
-              <div key={i} className="reveal breathe p-10 text-center transition-all duration-700 hover:scale-[1.02]"
-                style={{ background: 'rgba(255,255,255,0.5)', borderRadius: '50%', aspectRatio: '1 / 1.1' }}>
-                <stat.icon className="w-6 h-6 mx-auto mb-4" style={{ color: stat.color, opacity: 0.6 }} />
+              <div key={i} className="reveal breathe p-10 text-center cloud-card transition-all duration-700 hover:scale-[1.04]"
+                style={{ borderRadius: '50%', aspectRatio: '1 / 1.1', animationDelay: `${i * 0.4}s` }}>
+                <stat.icon className="w-6 h-6 mx-auto mb-4" style={{ color: stat.color, opacity: 0.7 }} />
                 <div className="font-goo text-3xl text-[#1e293b] mb-2">{stat.value}</div>
                 <div className="text-[10px] tracking-[0.3em] uppercase text-[#64748b]/50">{stat.label}</div>
               </div>
@@ -260,9 +260,9 @@ export default function Home() {
       <section ref={productRef} id="nursery" className="relative py-32 md:py-48 px-8 md:px-16">
         <div className="max-w-5xl mx-auto">
           <div className="reveal text-center mb-16">
-            <span className="text-[10px] tracking-[0.4em] uppercase text-[#3b82f6]/50 mb-4 block">Product Architecture</span>
+            <span className="text-[10px] tracking-[0.4em] uppercase text-[#3b82f6]/50 mb-4 block">Gentle Essentials</span>
             <h2 className="font-goo text-4xl md:text-5xl text-[#1e293b] mb-3">The Nursery</h2>
-            <p className="text-[#64748b]/60 max-w-sm mx-auto font-light">Five lines. Nine formulations. Total gentleness.</p>
+            <p className="text-[#64748b]/60 max-w-sm mx-auto font-light">Nine soft solutions for the tiniest humans and their biggest messes.</p>
           </div>
 
           {/* Tabs */}
@@ -285,7 +285,7 @@ export default function Home() {
             })}
           </div>
 
-          {/* Product Grid — Soft rounded cards */}
+          {/* Product Grid — Cloud soft cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((product, i) => {
               const Icon = PRODUCT_ICONS[i % PRODUCT_ICONS.length];
@@ -293,18 +293,14 @@ export default function Home() {
               const color = colors[i % colors.length];
 
               return (
-                <div key={i} className="reveal orb-drift group p-10 text-center transition-all duration-700 hover:scale-[1.03]"
-                  style={{
-                    background: 'rgba(255,255,255,0.5)',
-                    borderRadius: '32px',
-                    boxShadow: `0 8px 40px ${color}08`,
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = `0 16px 50px ${color}15`; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = `0 8px 40px ${color}08`; }}>
+                <div key={i} className="reveal orb-drift group p-10 text-center cloud-card"
+                  style={{ borderColor: `${color}30`, boxShadow: `0 8px 40px ${color}10` }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-6px) scale(1.03)'; e.currentTarget.style.boxShadow = `0 20px 60px ${color}20`; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0) scale(1)'; e.currentTarget.style.boxShadow = `0 8px 40px ${color}10`; }}>
 
                   <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5"
-                    style={{ background: `${color}10`, border: `1px solid ${color}15` }}>
-                    <Icon className="w-6 h-6" style={{ color, opacity: 0.7 }} />
+                    style={{ background: `${color}12`, border: `2px solid ${color}20` }}>
+                    <Icon className="w-6 h-6" style={{ color, opacity: 0.8 }} />
                   </div>
 
                   <span className="text-[9px] tracking-[0.3em] uppercase text-[#64748b]/40 block mb-3">{product.category}</span>
@@ -403,8 +399,8 @@ export default function Home() {
               <div className="w-32 h-32 rounded-full opacity-[0.03] blur-3xl" style={{ background: '#3b82f6' }} />
             </div>
             <Gamepad2 className="w-10 h-10 text-[#3b82f6]/60 mx-auto mb-6" />
-            <h2 className="font-goo text-3xl md:text-4xl text-[#1e293b] mb-4">Play GHOULVERSE</h2>
-            <p className="text-[#64748b]/60 max-w-sm mx-auto mb-8 font-light">Pilot {config.name} through the Void. Battle bacteria, unlock all 12 ghouls.</p>
+            <h2 className="font-goo text-3xl md:text-4xl text-[#1e293b] mb-4">Dreamy GHOULVERSE</h2>
+            <p className="text-[#64748b]/60 max-w-sm mx-auto mb-8 font-light">Float through the softest universe ever. Collect sleepy stars and cuddle all 12 ghouls.</p>
             <a href={config.gameUrl} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 font-goo text-sm tracking-wider text-[#3b82f6] transition-all hover:scale-105"
               style={{ border: '1px solid rgba(59,130,246,0.3)', borderRadius: '9999px' }}>
