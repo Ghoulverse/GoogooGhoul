@@ -1,6 +1,7 @@
 import GooGooMascot from '@/components/GooGooMascot';
 import GooGooParticles from '@/components/GooGooParticles';
 import Home from '@/pages/Home';
+import CookieBanner from '@/components/CookieBanner';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
 
       {/* Page content */}
       <Home />
-    </>
+      <CookieBanner />
+</>
   );
 }
