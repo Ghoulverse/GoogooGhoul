@@ -262,7 +262,7 @@ export default function Home() {
           <div className="reveal text-center mb-16">
             <span className="text-[10px] tracking-[0.4em] uppercase text-[#3b82f6]/50 mb-4 block">Gentle Essentials</span>
             <h2 className="font-goo text-4xl md:text-5xl text-[#1e293b] mb-3">The Nursery</h2>
-            <p className="text-[#64748b]/60 max-w-sm mx-auto font-light">Nine soft solutions for the tiniest humans and their biggest messes.</p>
+            <p className="text-[#64748b]/60 max-w-sm mx-auto font-light">Nine gentle essentials for the tiniest humans and their biggest adventures.</p>
           </div>
 
           {/* Tabs */}

@@ -69,9 +69,8 @@ export interface GhoulConfig {
 export const config: GhoulConfig = {
   id: "googoo",
   name: "GOO GOO",
-  tagline: "Tiny Messes, Big Solutions",
-  description:
-    "GOO GOO understands that the smallest humans make the biggest messes. From puree explosions to nappy disasters, GOO GOO handles the chaos of early childhood with gentle precision.",
+  tagline: "Tiny Humans, Trusted Care",
+  description: "The infant and early-childhood vertical. GOO GOO handles the chaos of new parenthood with gentle, scientifically-backed recommendations.",
   domain: "https://www.googooghoul.com",
   icon: "🍼",
   isLeader: false,
@@ -278,7 +277,7 @@ export const config: GhoulConfig = {
     },
     {
       id: "scholar",
-      name: "SCHOLAR GHOUL",
+      name: "BOOK GHOUL",
       domain: "https://www.ghoulverse.com/ghouls/scholar/",
       icon: "📚",
       color: "#f97316",
@@ -304,7 +303,7 @@ export const config: GhoulConfig = {
     title: "The Science",
     subtitle: "Gentle-Bond Disruptors™",
     description: "Every GOO GOO product is powered by Gentle-Bond Disruptors™ — a patented enzyme system that targets organic proteins and carbohydrates at the molecular level. Puree on a onesie? Nappy bin odor? These enzymes dismantle the molecular bonds holding messes together — without harsh chemicals, synthetic fragrances, or residues unsafe for infant skin.",
-    adaptation: "For The Nursery, we formulated at pH 5.5 — matching infant skin chemistry. No bleach. No ammonia. No parabens. Just molecular precision that respects the most delicate skin.",
+    adaptation: "For the Nursery, every formulation is paediatrician-advised, fragrance-conscious, and designed for the gentlest care routines from bottles to bedding.",
     stats: [
       { label: "Bond Breakdown", value: "<45s" },
       { label: "pH Balance", value: "5.5" },
@@ -333,7 +332,7 @@ export const config: GhoulConfig = {
     { phase: "Phase 2", title: "Mascot Creation", items: ["24 professional mascots (2 per ghoul)", "$120K investment across 12 characters"], status: "upcoming" },
     { phase: "Phase 3", title: "Partnerships & Revenue", items: ["Sector sponsorships", "Affiliate deals", "Event appearances", "Influencer recruitment"], status: "upcoming" },
     { phase: "Phase 4", title: "Entertainment Scale", items: ["Animated series pilot", "Convention circuit", "Merchandise licensing"], status: "upcoming" },
-    { phase: "Phase 5", title: "Product Launch", items: ["GOO GHOUL household cleaners", "Vertical-specific product lines"], status: "upcoming" },
+    { phase: "Phase 5", title: "Product Launch", items: ["GOO GHOUL flagship household line", "Vertical-specific owned product lines"], status: "upcoming" },
   ],
 
   fundingAsk: "$250,000 AUD",
@@ -358,6 +357,6 @@ export const config: GhoulConfig = {
     { stream: "Licensing", description: "Character IP licensing to brands", timeline: "Year 2" },
     { stream: "Merchandise", description: "Royalties on plush, apparel, accessories", timeline: "Year 2" },
     { stream: "Animation", description: "YouTube/streaming ad revenue, distribution deals", timeline: "Year 2" },
-    { stream: "Products", description: "Owned product lines (GOO GHOUL cleaners first)", timeline: "Year 3" },
+    { stream: "Products", description: "Owned product lines launched per vertical, starting with GOO GHOUL", timeline: "Year 3" },
   ],
 };
